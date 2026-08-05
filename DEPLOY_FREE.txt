@@ -1,0 +1,38 @@
+FREE HOSTING NEEDED FOR IPHONE/IPAD INSTALLATION
+================================================
+
+WHY
+Apple requires an installable Home Screen web app to be loaded from HTTPS. Opening index.html directly from the Files app is not the same as installing a PWA.
+
+THE APP ITSELF HAS NO SERVER DATABASE
+The host only serves the app's HTML, CSS, JavaScript, and icons. Register ZIP files are opened and edited locally on the user's device. The app has no upload code and no analytics.
+
+SIMPLE FREE DEPLOYMENT OPTIONS
+A. GitHub Pages
+- Create a GitHub repository.
+- Upload all files from this folder, keeping the folders intact.
+- Enable Pages for the repository's main branch/root folder.
+- Open the generated HTTPS address in Safari.
+
+B. Cloudflare Pages / Netlify
+- Create a new static site.
+- Upload this whole folder as the site files.
+- No build command is required.
+- Publish and open the generated HTTPS address.
+
+REQUIRED FILES AT THE WEBSITE ROOT
+index.html
+styles.css
+app.js
+sw.js
+manifest.webmanifest
+vendor/jszip.min.js
+icons/icon-192.png
+icons/icon-512.png
+icons/maskable-512.png
+
+AFTER DEPLOYMENT ON IPHONE/IPAD
+Safari > Share > Add to Home Screen
+
+OFFLINE USE
+Open the installed app once while connected to the internet so the app shell is cached. After that, the interface can open offline. Backup ZIP reading and editing are local.

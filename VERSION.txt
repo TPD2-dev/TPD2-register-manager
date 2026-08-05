@@ -1,0 +1,4 @@
+Tupacks SPS-530 Manager
+Version 0.2.0 Cross-Platform PWA
+Build date: 2026-08-04
+Current write scope: existing PLU description and current price only
