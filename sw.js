@@ -5,10 +5,10 @@ const APP_SHELL = [
   './styles.css',
   './app.js',
   './manifest.webmanifest',
-  './vendor/jszip.min.js',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/maskable-512.png'
+  './jszip.min.js',
+  './icon-192.png',
+  './icon-512.png',
+  './maskable-512.png'
 ];
 
 self.addEventListener('install', event => {
